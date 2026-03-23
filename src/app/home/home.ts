@@ -78,12 +78,12 @@ export class Home {
   ];
 
   justArrived = [
-     { id: 3, name: 'Organic Bananas', price: 10.00, image: 'assets/products/hex.webp', onSale: true },
+    { id: 3, name: 'Organic Bananas', price: 10.00, image: 'assets/products/hex.webp', onSale: true },
     { id: 4, name: 'Fresh Melon', price: 22.00, image: 'assets/products/stud.jpg', onSale: false },
     { id: 5, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
-   { id: 1, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/anchor.jpg', onSale: true },
+    { id: 1, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/anchor.jpg', onSale: true },
     { id: 2, name: 'Tomato Ketchup', price: 7.00, image: 'assets/products/washer.webp', onSale: true },
-   
+
   ];
 
   // Blog posts
@@ -113,11 +113,39 @@ export class Home {
 
   // Tags
   tags = [
-    'Blue diamon almonds', 'Angie’s Boomchickapop Corn', 'Salty kettle Corn', 'Chobani Greek Yogurt',
-    'Sweet Vanilla Yogurt', 'Foster Farms Takeout Crispy wings', 'Warrior Blend Organic', 'Chao Cheese Creamy',
-    'Chicken meatballs', 'Blue diamon almonds', 'Angie’s Boomchickapop Corn', 'Salty kettle Corn',
-    'Chobani Greek Yogurt', 'Sweet Vanilla Yogurt', 'Foster Farms Takeout Crispy wings', 'Warrior Blend Organic',
-    'Chao Cheese Creamy', 'Chicken meatballs'
+    "Fasteners",
+    "Industrial Fasteners",
+    "Construction Fasteners",
+    "Heavy Duty Fasteners",
+    "High Strength Fasteners",
+    "Precision Fasteners",
+
+    "Hex Bolts",
+    "Stud Bolts",
+    "Threaded Rods",
+    "Anchor Bolts",
+    "Nuts and Bolts",
+    "Washers",
+    "U-Bolts",
+    "Fastening Systems",
+
+    "Construction Hardware",
+    "Structural Fasteners",
+    "Industrial Use",
+    "Machinery Fasteners",
+    "Infrastructure Fasteners",
+
+    "Stainless Steel Fasteners",
+    "Carbon Steel Fasteners",
+    "Galvanized Fasteners",
+    "Zinc Plated Fasteners",
+    "Corrosion Resistant Fasteners",
+
+    "Fastener Manufacturer",
+    "Fastener Supplier",
+    "Fastener Exporter",
+    "Bulk Fasteners",
+    "Custom Fasteners"
   ];
 
   // Features
