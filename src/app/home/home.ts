@@ -9,68 +9,81 @@ import { Component } from '@angular/core';
   styleUrl: './home.scss',
 })
 export class Home {
-   products = [
-    { id: 1, name: 'Sunstar Fresh Melon Juice', price: 18.00, image: 'assets/dummy.png', onSale: true },
-    { id: 2, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/dummy.png', onSale: false },
-    { id: 3, name: 'Organic Cucumber', price: 5.00, image: 'assets/dummy.png', onSale: true },
-    { id: 4, name: 'Fresh Milk', price: 12.00, image: 'assets/dummy.png', onSale: false },
-    { id: 5, name: 'Whole Wheat Biscuits', price: 8.00, image: 'assets/dummy.png', onSale: true },
-    { id: 6, name: 'Fresh Raspberries', price: 20.00, image: 'assets/dummy.png', onSale: false },
-    { id: 7, name: 'Tomato Ketchup', price: 7.00, image: 'assets/dummy.png', onSale: true },
-    { id: 8, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/dummy.png', onSale: false },
-    { id: 9, name: 'Organic Bananas', price: 10.00, image: 'assets/dummy.png', onSale: true },
-    { id: 10, name: 'Fresh Melon', price: 22.00, image: 'assets/dummy.png', onSale: false }
+  allProducts = [
+    { id: 1, name: 'Sunstar Fresh Melon Juice', price: 18.00, image: 'assets/products/threaded-rod.webp', onSale: true },
+    { id: 2, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/products/anchor.jpg', onSale: false },
+    { id: 3, name: 'Organic Cucumber', price: 5.00, image: 'assets/products/hex.webp', onSale: true },
+    { id: 4, name: 'Fresh Milk', price: 12.00, image: 'assets/products/washer.webp', onSale: false },
+    { id: 4, name: 'Fresh Milk', price: 12.00, image: 'assets/products/stud.jpg', onSale: false },
   ];
 
-  fruits = [
-    { id: 1, name: 'Organic Cucumber', price: 5.00, image: 'assets/dummy.png', onSale: true },
-    { id: 2, name: 'Fresh Milk', price: 12.00, image: 'assets/dummy.png', onSale: false },
-    { id: 3, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/dummy.png', onSale: true },
-    { id: 4, name: 'Fresh Raspberries', price: 20.00, image: 'assets/dummy.png', onSale: false },
-    { id: 5, name: 'Organic Bananas', price: 10.00, image: 'assets/dummy.png', onSale: true },
-    { id: 6, name: 'Fresh Melon', price: 22.00, image: 'assets/dummy.png', onSale: false }
+  thrededRods = [
+    { id: 1, name: 'Sunstar Fresh Melon Juice', price: 18.00, image: 'assets/products/threaded-rod2.jpg', onSale: true },
+    { id: 2, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
+    { id: 3, name: 'Organic Cucumber', price: 5.00, image: 'assets/products/threaded-rod2.jpg', onSale: true },
+    { id: 4, name: 'Fresh Milk', price: 12.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
+    { id: 5, name: 'Whole Wheat Biscuits', price: 8.00, image: 'assets/products/threaded-rod2.jpg', onSale: true },
+    { id: 6, name: 'Fresh Raspberries', price: 20.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
+    { id: 7, name: 'Tomato Ketchup', price: 7.00, image: 'assets/products/threaded-rod2.jpg', onSale: true }
   ];
 
-  juices = [
-    { id: 1, name: 'Sunstar Fresh Melon Juice', price: 18.00, image: 'assets/dummy.png', onSale: false },
-    { id: 2, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/dummy.png', onSale: false },
-    { id: 3, name: 'Fresh Tomato Juice', price: 8.00, image: 'assets/dummy.png', onSale: false },
-    { id: 4, name: 'Mixed Fruit Juice', price: 25.00, image: 'assets/dummy.png', onSale: false },
-    { id: 5, name: 'Strawberry Juice', price: 20.00, image: 'assets/dummy.png', onSale: false },
-    { id: 6, name: 'Melon Smoothie', price: 22.00, image: 'assets/dummy.png', onSale: false }
+  studBolt = [
+    { id: 1, name: 'Organic Cucumber', price: 5.00, image: 'assets/products/stud.jpg', onSale: true },
+    { id: 2, name: 'Fresh Milk', price: 12.00, image: 'assets/products/stud.jpg', onSale: false },
+    { id: 3, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/products/stud.jpg', onSale: true },
+    { id: 4, name: 'Fresh Raspberries', price: 20.00, image: 'assets/products/stud.jpg', onSale: false },
+    { id: 5, name: 'Organic Bananas', price: 10.00, image: 'assets/products/stud.jpg', onSale: true },
+    { id: 6, name: 'Fresh Melon', price: 22.00, image: 'assets/products/stud.jpg', onSale: false }
+  ];
+
+  hexNuts = [
+    { id: 1, name: 'Sunstar Fresh Melon Juice', price: 18.00, image: 'assets/products/hex.webp', onSale: false },
+    { id: 2, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/products/hex.webp', onSale: false },
+    { id: 3, name: 'Fresh Tomato Juice', price: 8.00, image: 'assets/products/hex.webp', onSale: false },
+    { id: 4, name: 'Mixed Fruit Juice', price: 25.00, image: 'assets/products/hex.webp', onSale: false },
+    { id: 5, name: 'Strawberry Juice', price: 20.00, image: 'assets/products/hex.webp', onSale: false },
+    { id: 6, name: 'Melon Smoothie', price: 22.00, image: 'assets/products/hex.webp', onSale: false }
+  ];
+  washer = [
+    { id: 1, name: 'Sunstar Fresh Melon Juice', price: 18.00, image: 'assets/products/washer.webp', onSale: false },
+    { id: 2, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/products/washer.webp', onSale: false },
+    { id: 3, name: 'Fresh Tomato Juice', price: 8.00, image: 'assets/products/washer.webp', onSale: false },
+    { id: 4, name: 'Mixed Fruit Juice', price: 25.00, image: 'assets/products/washer.webp', onSale: false },
+    { id: 5, name: 'Strawberry Juice', price: 20.00, image: 'assets/products/washer.webp', onSale: false },
+    { id: 6, name: 'Melon Smoothie', price: 22.00, image: 'assets/products/washer.webp', onSale: false }
+  ];
+  anchor = [
+    { id: 1, name: 'Sunstar Fresh Melon Juice', price: 18.00, image: 'assets/products/anchor.jpg', onSale: false },
+    { id: 2, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/products/anchor.jpg', onSale: false },
+    { id: 3, name: 'Fresh Tomato Juice', price: 8.00, image: 'assets/products/anchor.jpg', onSale: false },
+    { id: 4, name: 'Mixed Fruit Juice', price: 25.00, image: 'assets/products/anchor.jpg', onSale: false },
+    { id: 5, name: 'Strawberry Juice', price: 20.00, image: 'assets/products/anchor.jpg', onSale: false },
+    { id: 6, name: 'Melon Smoothie', price: 22.00, image: 'assets/products/anchor.jpg', onSale: false }
   ];
 
   bestSelling = [
-    { id: 1, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/dummy.png', onSale: true },
-    { id: 2, name: 'Tomato Ketchup', price: 7.00, image: 'assets/dummy.png', onSale: true },
-    { id: 3, name: 'Organic Bananas', price: 10.00, image: 'assets/dummy.png', onSale: true },
-    { id: 4, name: 'Fresh Melon', price: 22.00, image: 'assets/dummy.png', onSale: false },
-    { id: 5, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/dummy.png', onSale: false },
-    { id: 6, name: 'Tomato Ketchup', price: 7.00, image: 'assets/dummy.png', onSale: false },
-    { id: 7, name: 'Organic Bananas', price: 10.00, image: 'assets/dummy.png', onSale: false },
-    { id: 8, name: 'Fresh Melon', price: 22.00, image: 'assets/dummy.png', onSale: false }
+    { id: 1, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/anchor.jpg', onSale: true },
+    { id: 2, name: 'Tomato Ketchup', price: 7.00, image: 'assets/products/washer.webp', onSale: true },
+    { id: 3, name: 'Organic Bananas', price: 10.00, image: 'assets/products/hex.webp', onSale: true },
+    { id: 4, name: 'Fresh Melon', price: 22.00, image: 'assets/products/stud.jpg', onSale: false },
+    { id: 5, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
   ];
 
   popular = [
-    { id: 1, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/dummy.png', onSale: false },
-    { id: 2, name: 'Tomato Ketchup', price: 7.00, image: 'assets/dummy.png', onSale: false },
-    { id: 3, name: 'Organic Bananas', price: 10.00, image: 'assets/dummy.png', onSale: false },
-    { id: 4, name: 'Fresh Melon', price: 22.00, image: 'assets/dummy.png', onSale: false },
-    { id: 5, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/dummy.png', onSale: false },
-    { id: 6, name: 'Tomato Ketchup', price: 7.00, image: 'assets/dummy.png', onSale: false },
-    { id: 7, name: 'Organic Bananas', price: 10.00, image: 'assets/dummy.png', onSale: false },
-    { id: 8, name: 'Fresh Melon', price: 22.00, image: 'assets/dummy.png', onSale: false }
+    { id: 1, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/anchor.jpg', onSale: true },
+    { id: 2, name: 'Tomato Ketchup', price: 7.00, image: 'assets/products/washer.webp', onSale: true },
+    { id: 3, name: 'Organic Bananas', price: 10.00, image: 'assets/products/hex.webp', onSale: true },
+    { id: 4, name: 'Fresh Melon', price: 22.00, image: 'assets/products/stud.jpg', onSale: false },
+    { id: 5, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
   ];
 
   justArrived = [
-    { id: 1, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/dummy.png', onSale: false },
-    { id: 2, name: 'Tomato Ketchup', price: 7.00, image: 'assets/dummy.png', onSale: false },
-    { id: 3, name: 'Organic Bananas', price: 10.00, image: 'assets/dummy.png', onSale: false },
-    { id: 4, name: 'Fresh Melon', price: 22.00, image: 'assets/dummy.png', onSale: false },
-    { id: 5, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/dummy.png', onSale: false },
-    { id: 6, name: 'Tomato Ketchup', price: 7.00, image: 'assets/dummy.png', onSale: false },
-    { id: 7, name: 'Organic Bananas', price: 10.00, image: 'assets/dummy.png', onSale: false },
-    { id: 8, name: 'Fresh Melon', price: 22.00, image: 'assets/dummy.png', onSale: false }
+     { id: 3, name: 'Organic Bananas', price: 10.00, image: 'assets/products/hex.webp', onSale: true },
+    { id: 4, name: 'Fresh Melon', price: 22.00, image: 'assets/products/stud.jpg', onSale: false },
+    { id: 5, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
+   { id: 1, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/anchor.jpg', onSale: true },
+    { id: 2, name: 'Tomato Ketchup', price: 7.00, image: 'assets/products/washer.webp', onSale: true },
+   
   ];
 
   // Blog posts
