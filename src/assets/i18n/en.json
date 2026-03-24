@@ -1,0 +1,51 @@
+{
+    "HOME": {
+        "TITLE1": "Leading Manufacturer & Exporter",
+        "SUBTITLE1": "Our focus is on consistent quality, timely delivery, and long-term business partnerships.",
+        "TITLE2": "Secure Every Connection",
+        "SUBTITLE2": "ThreadRo is a leading manufacturer and exporter of threaded rods and related fastening solutions based in Ludhiana, India.",
+        "TITLE3": "Strong & Reliable Fasteners",
+        "SUBTITLE3": "We specialize in bulk production and container-based export for construction, infrastructure, and industrial projects.",
+        "SHOP": "Shop Collection"
+
+    },
+    "PRODUCTS": {
+        "THREADED_ROD": "Threaded Rod",
+        "ANCHOR_BOLT": "Anchor Bolt",
+        "HEX_NUTS": "Hex Nuts",
+        "WASHER": "Washer",
+        "STUD": "Stud Bolt"
+    },
+    "SECTIONS": {
+        "TRENDING": "Trending Products",
+        "BEST_SELLING": "Best Selling",
+        "POPULAR": "Popular",
+        "JUST_ARRIVED": "Just Arrived"
+    },
+    "FEATURES": {
+        "FREE_DELIVERY": "Free delivery",
+        "FREE_DELIVERY_DESC": "We offer free delivery on selected orders, ensuring a smooth experience.",
+        "SECURE_PAYMENT": "100% secure payment",
+        "SECURE_PAYMENT_DESC": "Safe and secure transactions with advanced encryption.",
+        "QUALITY": "Quality guarantee",
+        "QUALITY_DESC": "Our products undergo rigorous quality checks at every stage.",
+        "SAVINGS": "Guaranteed savings",
+        "SAVINGS_DESC": "Cost-effective solutions without compromising quality.",
+        "OFFERS": "Daily offers",
+        "OFFERS_DESC": "Enjoy exclusive daily deals on selected fasteners."
+    },
+    "BLOG": {
+        "TITLE1": "Applications and Benefits of Fasteners in Industry",
+        "DESC1": "Fasteners are used in construction, automotive, and industrial sectors.",
+        "TITLE2": "Choosing the Right Fastener",
+        "DESC2": "Selecting the right fastener ensures safety and performance.",
+        "TITLE3": "What Are Fasteners?",
+        "DESC3": "Fasteners are essential components used to join objects securely."
+    },
+    "COMMON": {
+        "UNIT": "1 Unit",
+        "PRICE": "Price",
+        "ADD_TO_CART": "Add to Cart",
+        "WHATSAPP_MSG": "Hello, I want to know more about your products"
+    }
+}

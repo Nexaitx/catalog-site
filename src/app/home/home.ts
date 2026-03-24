@@ -1,17 +1,21 @@
 
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
   imports: [CommonModule,
-    RouterLink
+    RouterLink,
+    TranslateModule   
   ],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
 export class Home {
+
+  public translate = inject(TranslateService)
   allProducts = [
     { id: 1, name: 'Threaded Rod', price: 18.00, image: 'assets/products/thread.png', onSale: true },
     { id: 2, name: 'Anchor Bolt', price: 15.00, image: 'assets/products/anchor.png', onSale: false },
@@ -190,7 +194,13 @@ export class Home {
     }
   ];
 
-  // Social links
-  
+ openWhatsApp() {
+  const phoneNumber = '919876543210';
+  const message = 'Hello, I want to know more about your products';
+
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank');
+}
+
 
 }

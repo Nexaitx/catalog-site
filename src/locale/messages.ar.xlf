@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="6844508308833493754" datatype="html">
+        <source>Leading Manufacturer &amp; Exporter</source>
+        <target>شركة رائدة في التصنيع والتصدي
+</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6168574961591788004" datatype="html">
+        <source>Our focus is on consistent quality, timely delivery, and long-term business partnerships.</source>
+        <target>نركز على الجودة المستمرة والتسليم في الوقت المحدد وبناء شراكات طويلة الأمد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,13 +1,14 @@
 import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
     RouterLink,
-    CommonModule],
+    CommonModule,
+  TranslateModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
@@ -37,4 +38,14 @@ export class App {
       items: ['FAQ', 'Contact', 'Privacy Policy', 'Returns & Refunds', 'Cookie Guidelines', 'Delivery Information']
     }
   ];
+translate = inject(TranslateService);
+  constructor() {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en'); // default
+  }
+
+  changeLang(lang: string) {
+    this.translate.use(lang);
+  }
+
 }
