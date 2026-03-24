@@ -129,7 +129,7 @@
 <!-- Header -->
 <header>
   <div class="container-fluid">
-    <div class="row py-3 border-bottom">
+    <div class="row pt-3 border-bottom">
 
       <div class="col-sm-4 col-lg-3 text-center text-sm-start">
         <div class="main-logo">
@@ -218,7 +218,7 @@
     </div>
   </div>
   <div class="container-fluid">
-    <div class="row py-3">
+    <div class="row">
       <div class="d-flex  justify-content-center justify-content-sm-between align-items-center">
         <nav class="main-menu d-flex navbar navbar-expand-lg">
 
@@ -267,7 +267,7 @@
 
 <!-- Main Banner Carousel -->
 <section class="py-3"
-  style="background-image: url('assets/background1.jpg');background-repeat: no-repeat;background-size: cover;">
+  style="background-image: url('assets/background1.jpg');background-repeat: no-repeat;background-size: cover; margin-top:208px">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -310,7 +310,7 @@
                       <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Collection</a>
                     </div>
                     <div class="img-wrapper col-md-5">
-                      <img src="../../assets/hero1.png" class="img-fluid">
+                      <img src="../../assets/hero2.png" class="img-fluid">
                     </div>
                   </div>
                 </div>
@@ -325,7 +325,7 @@
                       <a href="#" class="btn btn-outline-dark btn-lg text-uppercase fs-6 rounded-1">Shop Collection</a>
                     </div>
                     <div class="img-wrapper col-md-5">
-                      <img src="../../assets/hero1.png" class="img-fluid">
+                      <img src="../../assets/hero3.png" class="img-fluid">
                     </div>
                   </div>
                 </div>
@@ -347,11 +347,11 @@
             <div class="row banner-content p-5">
 
               <div class="content-wrapper col-md-7">
-                <div class="categories sale mb-3 pb-3">20% off</div>
+                <div class="categories sale">20% off</div>
                 <h3 class="banner-title">High Quality-Competitive Pricing</h3>
-                <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24">
+                <!-- <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24">
                     <use xlink:href="#arrow-right"></use>
-                  </svg></a>
+                  </svg></a> -->
               </div>
 
             </div>
@@ -362,11 +362,11 @@
             <div class="row banner-content p-5">
 
               <div class="content-wrapper col-md-7">
-                <div class="categories sale mb-3 pb-3">15% off</div>
+                <div class="categories sale">15% off</div>
                 <h3 class="item-title">Bulk Supply-Container Load Available</h3>
-                <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24">
+                <!-- <a href="#" class="d-flex align-items-center nav-link">Shop Collection <svg width="24" height="24">
                     <use xlink:href="#arrow-right"></use>
-                  </svg></a>
+                  </svg></a> -->
               </div>
 
             </div>
@@ -626,9 +626,7 @@
           </div>
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
-
               <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-
                 <div class="col" *ngFor="let product of allProducts.slice(0,10)">
                   <div class="product-item">
                     <span class="badge bg-success position-absolute m-3" *ngIf="product.onSale">-30%</span>
@@ -667,60 +665,9 @@
                     </div>
                   </div>
                 </div>
-
               </div>
-              <!-- / product-grid -->
-
             </div>
-
-            <div class="tab-pane fade show active" id="nav-threaded" role="tabpanel" aria-labelledby="nav-threaded-tab">
-
-              <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-
-                <div class="col" *ngFor="let product of thrededRods.slice(0,10)">
-                  <div class="product-item">
-                    <span class="badge bg-success position-absolute m-3" *ngIf="product.onSale">-30%</span>
-                    <a href="#" class="btn-wishlist"><svg width="24" height="24">
-                        <use xlink:href="#heart"></use>
-                      </svg></a>
-                    <figure>
-                      <a href="index.html" title="Product Title">
-                        <img [src]="product.image" class="tab-image">
-                      </a>
-                    </figure>
-                    <h3>{{product.name}}</h3>
-                    <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24"
-                        class="text-primary">
-                        <use xlink:href="#star-solid"></use>
-                      </svg> 4.5</span>
-                    <span class="price">${{product.price}}</span>
-                    <div class="d-flex align-items-center justify-content-between">
-                      <div class="input-group product-qty">
-                        <span class="input-group-btn">
-                          <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus">
-                            <svg width="16" height="16">
-                              <use xlink:href="#minus"></use>
-                            </svg>
-                          </button>
-                        </span>
-                        <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1">
-                        <span class="input-group-btn">
-                          <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus">
-                            <svg width="16" height="16">
-                              <use xlink:href="#plus"></use>
-                            </svg>
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <!-- / product-grid -->
-
-            </div>
-
+            
             <div class="tab-pane fade" id="nav-stud" role="tabpanel" aria-labelledby="nav-stud-tab">
 
               <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
@@ -905,6 +852,51 @@
               </div>
               <!-- / product-grid -->
 
+            </div>
+
+            <div class="tab-pane fade" id="nav-threaded" role="tabpanel" aria-labelledby="nav-threaded-tab">
+              <div class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+                <div class="col" *ngFor="let product of thrededRods.slice(0,10)">
+                  <div class="product-item">
+                    <span class="badge bg-success position-absolute m-3" *ngIf="product.onSale">-30%</span>
+                    <a href="#" class="btn-wishlist"><svg width="24" height="24">
+                        <use xlink:href="#heart"></use>
+                      </svg></a>
+                    <figure>
+                      <a href="index.html" title="Product Title">
+                        <img [src]="product.image" class="tab-image">
+                      </a>
+                    </figure>
+                    <h3>{{product.name}}</h3>
+                    <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24"
+                        class="text-primary">
+                        <use xlink:href="#star-solid"></use>
+                      </svg> 4.5</span>
+                    <span class="price">${{product.price}}</span>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="input-group product-qty">
+                        <span class="input-group-btn">
+                          <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus">
+                            <svg width="16" height="16">
+                              <use xlink:href="#minus"></use>
+                            </svg>
+                          </button>
+                        </span>
+                        <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1">
+                        <span class="input-group-btn">
+                          <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus">
+                            <svg width="16" height="16">
+                              <use xlink:href="#plus"></use>
+                            </svg>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
