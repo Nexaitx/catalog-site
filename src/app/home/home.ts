@@ -5,88 +5,86 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, 
-    RouterLink,
-    RouterOutlet
+  imports: [CommonModule,
   ],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
 export class Home {
   allProducts = [
-    { id: 1, name: 'Sunstar Fresh Melon Juice', price: 18.00, image: 'assets/products/threaded-rod.webp', onSale: true },
-    { id: 2, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/products/anchor.jpg', onSale: false },
-    { id: 3, name: 'Organic Cucumber', price: 5.00, image: 'assets/products/hex.webp', onSale: true },
-    { id: 4, name: 'Fresh Milk', price: 12.00, image: 'assets/products/washer.webp', onSale: false },
-    { id: 4, name: 'Fresh Milk', price: 12.00, image: 'assets/products/stud.jpg', onSale: false },
+    { id: 1, name: 'Threaded Rod', price: 18.00, image: 'assets/products/thread.png', onSale: true },
+    { id: 2, name: 'Anchor Bolt', price: 15.00, image: 'assets/products/anchor.png', onSale: false },
+    { id: 3, name: 'Hex Nuts', price: 5.00, image: 'assets/products/hex.png', onSale: true },
+    { id: 4, name: 'Washer', price: 12.00, image: 'assets/products/washer.png', onSale: false },
+    { id: 4, name: 'Stud', price: 12.00, image: 'assets/products/stud.png', onSale: false },
   ];
 
   thrededRods = [
-    { id: 1, name: 'Sunstar Fresh Melon Juice', price: 18.00, image: 'assets/products/threaded-rod2.jpg', onSale: true },
-    { id: 2, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
-    { id: 3, name: 'Organic Cucumber', price: 5.00, image: 'assets/products/threaded-rod2.jpg', onSale: true },
-    { id: 4, name: 'Fresh Milk', price: 12.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
-    { id: 5, name: 'Whole Wheat Biscuits', price: 8.00, image: 'assets/products/threaded-rod2.jpg', onSale: true },
-    { id: 6, name: 'Fresh Raspberries', price: 20.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
-    { id: 7, name: 'Tomato Ketchup', price: 7.00, image: 'assets/products/threaded-rod2.jpg', onSale: true }
+    { id: 1, name: 'Threaded Rod', price: 18.00, image: 'assets/products/thread.png', onSale: true },
+    { id: 2, name: 'Threaded Rod', price: 15.00, image: 'assets/products/thread.png', onSale: false },
+    { id: 3, name: 'Threaded Rod', price: 5.00, image: 'assets/products/thread.png', onSale: true },
+    { id: 4, name: 'Threaded Rod', price: 12.00, image: 'assets/products/thread.png', onSale: false },
+    { id: 5, name: 'Threaded Rod', price: 8.00, image: 'assets/products/thread.png', onSale: true },
+    { id: 6, name: 'Threaded Rod', price: 20.00, image: 'assets/products/thread.png', onSale: false },
+    { id: 7, name: 'Threaded Rod', price: 7.00, image: 'assets/products/thread.png', onSale: true }
   ];
 
   studBolt = [
-    { id: 1, name: 'Organic Cucumber', price: 5.00, image: 'assets/products/stud.jpg', onSale: true },
-    { id: 2, name: 'Fresh Milk', price: 12.00, image: 'assets/products/stud.jpg', onSale: false },
-    { id: 3, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/products/stud.jpg', onSale: true },
-    { id: 4, name: 'Fresh Raspberries', price: 20.00, image: 'assets/products/stud.jpg', onSale: false },
-    { id: 5, name: 'Organic Bananas', price: 10.00, image: 'assets/products/stud.jpg', onSale: true },
-    { id: 6, name: 'Fresh Melon', price: 22.00, image: 'assets/products/stud.jpg', onSale: false }
+    { id: 1, name: 'Stud', price: 5.00, image: 'assets/products/stud.png', onSale: true },
+    { id: 2, name: 'Stud', price: 12.00, image: 'assets/products/stud.png', onSale: false },
+    { id: 3, name: 'Stud', price: 15.00, image: 'assets/products/stud.png', onSale: true },
+    { id: 4, name: 'Stud', price: 20.00, image: 'assets/products/stud.png', onSale: false },
+    { id: 5, name: 'Stud', price: 10.00, image: 'assets/products/stud.png', onSale: true },
+    { id: 6, name: 'Stud', price: 22.00, image: 'assets/products/stud.png', onSale: false }
   ];
 
   hexNuts = [
-    { id: 1, name: 'Sunstar Fresh Melon Juice', price: 18.00, image: 'assets/products/hex.webp', onSale: false },
-    { id: 2, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/products/hex.webp', onSale: false },
-    { id: 3, name: 'Fresh Tomato Juice', price: 8.00, image: 'assets/products/hex.webp', onSale: false },
-    { id: 4, name: 'Mixed Fruit Juice', price: 25.00, image: 'assets/products/hex.webp', onSale: false },
-    { id: 5, name: 'Strawberry Juice', price: 20.00, image: 'assets/products/hex.webp', onSale: false },
-    { id: 6, name: 'Melon Smoothie', price: 22.00, image: 'assets/products/hex.webp', onSale: false }
+    { id: 1, name: 'Hex Nutes', price: 18.00, image: 'assets/products/hex.png', onSale: false },
+    { id: 2, name: 'Hex Nutes', price: 15.00, image: 'assets/products/hex.png', onSale: false },
+    { id: 3, name: 'Hex Nutes', price: 8.00, image: 'assets/products/hex.png', onSale: false },
+    { id: 4, name: 'Hex Nutes', price: 25.00, image: 'assets/products/hex.png', onSale: false },
+    { id: 5, name: 'Hex Nutes', price: 20.00, image: 'assets/products/hex.png', onSale: false },
+    { id: 6, name: 'Hex Nutes', price: 22.00, image: 'assets/products/hex.png', onSale: false }
   ];
   washer = [
-    { id: 1, name: 'Sunstar Fresh Melon Juice', price: 18.00, image: 'assets/products/washer.webp', onSale: false },
-    { id: 2, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/products/washer.webp', onSale: false },
-    { id: 3, name: 'Fresh Tomato Juice', price: 8.00, image: 'assets/products/washer.webp', onSale: false },
-    { id: 4, name: 'Mixed Fruit Juice', price: 25.00, image: 'assets/products/washer.webp', onSale: false },
-    { id: 5, name: 'Strawberry Juice', price: 20.00, image: 'assets/products/washer.webp', onSale: false },
-    { id: 6, name: 'Melon Smoothie', price: 22.00, image: 'assets/products/washer.webp', onSale: false }
+    { id: 1, name: 'Washer', price: 18.00, image: 'assets/products/washer.png', onSale: false },
+    { id: 2, name: 'Washer', price: 15.00, image: 'assets/products/washer.png', onSale: false },
+    { id: 3, name: 'Washer', price: 8.00, image: 'assets/products/washer.png', onSale: false },
+    { id: 4, name: 'Washer', price: 25.00, image: 'assets/products/washer.png', onSale: false },
+    { id: 5, name: 'Washer', price: 20.00, image: 'assets/products/washer.png', onSale: false },
+    { id: 6, name: 'Washer', price: 22.00, image: 'assets/products/washer.png', onSale: false }
   ];
   anchor = [
-    { id: 1, name: 'Sunstar Fresh Melon Juice', price: 18.00, image: 'assets/products/anchor.jpg', onSale: false },
-    { id: 2, name: 'Fresh Orange Juice', price: 15.00, image: 'assets/products/anchor.jpg', onSale: false },
-    { id: 3, name: 'Fresh Tomato Juice', price: 8.00, image: 'assets/products/anchor.jpg', onSale: false },
-    { id: 4, name: 'Mixed Fruit Juice', price: 25.00, image: 'assets/products/anchor.jpg', onSale: false },
-    { id: 5, name: 'Strawberry Juice', price: 20.00, image: 'assets/products/anchor.jpg', onSale: false },
-    { id: 6, name: 'Melon Smoothie', price: 22.00, image: 'assets/products/anchor.jpg', onSale: false }
+    { id: 1, name: 'Anchor Bolt', price: 18.00, image: 'assets/products/anchor.png', onSale: false },
+    { id: 2, name: 'Anchor Bolt', price: 15.00, image: 'assets/products/anchor.png', onSale: false },
+    { id: 3, name: 'Anchor Bolt', price: 8.00, image: 'assets/products/anchor.png', onSale: false },
+    { id: 4, name: 'Anchor Bolt', price: 25.00, image: 'assets/products/anchor.png', onSale: false },
+    { id: 5, name: 'Anchor Bolt', price: 20.00, image: 'assets/products/anchor.png', onSale: false },
+    { id: 6, name: 'Anchor Bolt', price: 22.00, image: 'assets/products/anchor.png', onSale: false }
   ];
 
   bestSelling = [
-    { id: 1, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/anchor.jpg', onSale: true },
-    { id: 2, name: 'Tomato Ketchup', price: 7.00, image: 'assets/products/washer.webp', onSale: true },
-    { id: 3, name: 'Organic Bananas', price: 10.00, image: 'assets/products/hex.webp', onSale: true },
-    { id: 4, name: 'Fresh Melon', price: 22.00, image: 'assets/products/stud.jpg', onSale: false },
-    { id: 5, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
+    { id: 1, name: 'Anchor Bolt', price: 6.00, image: 'assets/products/anchor.png', onSale: true },
+    { id: 2, name: 'Washer', price: 7.00, image: 'assets/products/washer.png', onSale: true },
+    { id: 3, name: 'Hex Nuts', price: 10.00, image: 'assets/products/hex.png', onSale: true },
+    { id: 4, name: 'Stud', price: 22.00, image: 'assets/products/stud.png', onSale: false },
+    { id: 5, name: 'Threaded Rod', price: 6.00, image: 'assets/products/thread.png', onSale: false },
   ];
 
   popular = [
-    { id: 1, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/anchor.jpg', onSale: true },
-    { id: 2, name: 'Tomato Ketchup', price: 7.00, image: 'assets/products/washer.webp', onSale: true },
-    { id: 3, name: 'Organic Bananas', price: 10.00, image: 'assets/products/hex.webp', onSale: true },
-    { id: 4, name: 'Fresh Melon', price: 22.00, image: 'assets/products/stud.jpg', onSale: false },
-    { id: 5, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
+    { id: 1, name: 'Anchor Bolt', price: 6.00, image: 'assets/products/anchor.png', onSale: true },
+    { id: 2, name: 'Washer', price: 7.00, image: 'assets/products/washer.png', onSale: true },
+    { id: 3, name: 'Hex Nuts', price: 10.00, image: 'assets/products/hex.png', onSale: true },
+    { id: 4, name: 'Stud', price: 22.00, image: 'assets/products/stud.png', onSale: false },
+    { id: 5, name: 'Threaded Rod', price: 6.00, image: 'assets/products/thread.png', onSale: false },
   ];
 
   justArrived = [
-    { id: 3, name: 'Organic Bananas', price: 10.00, image: 'assets/products/hex.webp', onSale: true },
-    { id: 4, name: 'Fresh Melon', price: 22.00, image: 'assets/products/stud.jpg', onSale: false },
-    { id: 5, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/threaded-rod2.jpg', onSale: false },
-    { id: 1, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/anchor.jpg', onSale: true },
-    { id: 2, name: 'Tomato Ketchup', price: 7.00, image: 'assets/products/washer.webp', onSale: true },
+    { id: 3, name: 'Hex Nuts', price: 10.00, image: 'assets/products/hex.png', onSale: true },
+    { id: 4, name: 'Stud', price: 22.00, image: 'assets/products/stud.png', onSale: false },
+    { id: 5, name: 'Threaded Rod', price: 6.00, image: 'assets/products/thread.png', onSale: false },
+    { id: 1, name: 'Fresh Tomatoes', price: 6.00, image: 'assets/products/anchor.png', onSale: true },
+    { id: 2, name: 'Washer', price: 7.00, image: 'assets/products/washer.png', onSale: true },
 
   ];
 
