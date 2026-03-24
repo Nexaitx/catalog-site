@@ -89,25 +89,25 @@ export class Home {
   // Blog posts
   blogPosts = [
     {
-      image: 'assets/images.jpg',
+      image: 'assets/blog1.png',
       date: '22 Aug 2021',
-      category: 'tips & tricks',
-      title: 'Top 10 casual look ideas to dress up your kids',
-      excerpt: 'Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...'
+      category: 'Industry',
+      title: 'Applications and Benefits of Fasteners in Industry',
+      excerpt: 'Fasteners are used in almost every industry, from construction and automotive to aerospace and electronics.'
     },
     {
-      image: 'assets/images.jpg',
+      image: 'assets/blog2.png',
       date: '25 Aug 2021',
-      category: 'trending',
-      title: 'Latest trends of wearing street wears supremely',
-      excerpt: 'Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...'
+      category: 'Choice',
+      title: 'Choosing the Right Fastener for Your Project',
+      excerpt: 'Selecting the right fastener is critical for ensuring safety and long-term performance.'
     },
     {
-      image: 'assets/images.jpg',
+      image: 'assets/blog3.png',
       date: '28 Aug 2021',
-      category: 'inspiration',
-      title: '10 Different Types of comfortable clothes ideas for women',
-      excerpt: 'Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...'
+      category: 'Importance',
+      title: 'What Are Fasteners? Types & Importance',
+      excerpt: 'Fasteners are essential mechanical components used to join two or more objects together securely.'
     }
   ];
 
